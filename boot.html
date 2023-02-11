@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<style>
+    *{
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 20px;
+    padding: 10px;
+}
+.container{
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 2px solid grey;
+    border-radius: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+}
+fieldset{
+    border: 1px solid black;
+    background-color: #f2f2f2;
+}
+
+.main {
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: blueviolet;
+    color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    height: 35%;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: blue;
+}
+
+</style>   
+<title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwi9-8XU2sT8AhU2k2YCHdOKCQoYABAAGgJzbQ&ohost=www.google.com&cid=CAESbOD2101yhaIUEqdFu33YoHkoi0H98dtyqK9t_Po9G-DFuQtomqDDLxsgPBUWhnKM-zrm-bx3jhQbmaifEvnXm8H38kWrRiCUcN4qql1vdMBx0Ml2nFShM6VZXCQz8A9Uxh79wkRcQ2cN5dZiZg&sig=AOD64_3IVVCzT0KmyBcHPyGGcxbuWbO6Ug&q&adurl&ved=2ahUKEwjwyr7U2sT8AhWDxjgGHQgNDmcQ0Qx6BAgFEAE">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Help&Support</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Programme
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://silveroakuni.ac.in/bca">BCA</a></li>
+                  <li><a class="dropdown-item" href="#">B.TECH</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Masters
+
+                  </a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <hr style="border: 2px solid aqua;">
+      <div class="container">
+        <form action="">
+            <h1 class="main">Payment Form</h1>
+            <h2>Conatct information</h2>
+            <p>
+                Name: <input type="text" name="name" id="" required>
+            </p>
+        <fieldset> 
+            <legend>Gender</legend> <p>Male <input type="radio" name="gender" id="" required> Female <input type="radio" name="gender" id="">
+            </p>
+         </fieldset>
+         <fieldset> <legend> ADDRESS</legend>
+         <p>
+              <textarea name="address" id="address" cols="100" rows="8" required></textarea> 
+        </p>
+    </fieldset>
+         <p>
+            E-Mail: <input type="email" name="email" id="email" required>
+        </p>
+         <p>
+             Pincode: <input type="number" name="pincode" id="pincode" required>
+            </p>
+         <hr>
+         <h2>Payment desk</h2>
+         <p>
+             Card Type 
+            <select name="card_type" id="card_type" required>
+                <option value="">--Select a card type--</option>
+                <option value="Visa">Visa</option>
+                <option value="MasterCard">MasterCard</option>
+                <option value="EMI">EMI</option>
+            </select>
+         </p>
+         <p>
+            Card No. <input type="number" name="cardno" id="cardno" required>
+         </p>
+         <p>
+            EXP date: <input type="date" name="exp" id="exp" required>
+         </p>
+         <p>
+            CVV : <input type="password" name="cvv" id="cvv" required>
+         </p>
+    
+         <input type="submit" value="pay now">
+         <input type="reset" value="reset">
+        </form>
+        </div>
+</body>
+</html>
